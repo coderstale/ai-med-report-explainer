@@ -1,5 +1,3 @@
-# utils/charts.py
-
 import matplotlib.pyplot as plt
 import re
 
@@ -28,6 +26,5 @@ def generate_cbc_chart(cleaned_text):
         print("Chart generation error:", e)
         return None
 
-# Wrapper so app.py import works
 def generate_charts_from_text(cleaned_text):
     return generate_cbc_chart(cleaned_text)
