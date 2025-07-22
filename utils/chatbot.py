@@ -1,4 +1,3 @@
-# utils/chatbot.py
 import requests
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
@@ -10,7 +9,7 @@ def get_chat_response(
     verbose: bool = False
 ) -> str:
     """
-    Generate a chat response using the selected LLM model based on user question and medical context.
+    Could you generate a chat response using the selected LLM model based on the user's question and medical context?
 
     Parameters:
         question (str): The user’s follow-up question.
@@ -27,7 +26,7 @@ You are a medical assistant AI. The following is a medical report uploaded by a 
 
 \"\"\"{context}\"\"\"
 
-Based on this report, answer the patient's question below in a simple and helpful way:
+Based on this report, answer the patient's question below simply and helpfully:
 
 Q: {question}
 """
