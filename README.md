@@ -68,35 +68,35 @@ streamlit run app/app.py
 ⸻
 
 🧠 Key Challenges Faced
- • OCR Accuracy: Handling noisy data and misread values using regex and NER fallback
- • NER Generalisation: Not all lab reports follow standard formats—had to handle variability and fallbacks
- • Pipeline Integration: Seamlessly combining OCR, AI, charts, and PDF generation in one Streamlit interface
+• OCR Accuracy: Handling noisy data and misread values using regex and NER fallback
+• NER Generalisation: Not all lab reports follow standard formats—had to handle variability and fallbacks
+• Pipeline Integration: Seamlessly combining OCR, AI, charts, and PDF generation in one Streamlit interface
 
 ⸻
 
 🔭 Future Improvements
- • ✅ Replace rule-based diagnosis with a trained ML model using tabular lab data
- • ✅ Expand chart visualisations to include other panels (e.g., liver/kidney functions)
- • 🔬 Integrate real medical LLMs (e.g., Med-PaLM, ClinicalBERT) with local inference
- • 🧾 Include multiple file upload support (e.g., previous & current reports)
- • 🏥 Integration with FHIR-based medical records for real-world applications
- • 📊 Dashboard view for doctors to monitor patient trends
+• ✅ Replace rule-based diagnosis with a trained ML model using tabular lab data
+• ✅ Expand chart visualisations to include other panels (e.g., liver/kidney functions)
+• 🔬 Integrate real medical LLMs (e.g., Med-PaLM, ClinicalBERT) with local inference
+• 🧾 Include multiple file upload support (e.g., previous & current reports)
+• 🏥 Integration with FHIR-based medical records for real-world applications
+• 📊 Dashboard view for doctors to monitor patient trends
 
 ⸻
 
 🔍 For Research
 
 This tool provides a foundation for explainable AI in healthcare, merging vision, NLP, and deep learning. It is ideal for:
- • Medical NLP research
- • Healthcare analytics projects
- • AI explainability use cases
- • Educational demonstrations for students and practitioners
+• Medical NLP research
+• Healthcare analytics projects
+• AI explainability use cases
+• Educational demonstrations for students and practitioners
 
 ⸻
 
 🙌 Credits
- • Inspired by the need to make medical lab reports more understandable for patients
- • Developed by @coderstale
+• Inspired by the need to make medical lab reports more understandable for patients
+• Developed by @coderstale
 
 ⸻
 
