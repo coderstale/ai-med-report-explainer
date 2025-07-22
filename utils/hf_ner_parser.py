@@ -1,7 +1,6 @@
 from transformers import pipeline
 import torch
 
-# Force Transformers to use only PyTorch (not TensorFlow)
 pipeline_task = "ner"
 model_name = "d4data/biomedical-ner-all"
 
