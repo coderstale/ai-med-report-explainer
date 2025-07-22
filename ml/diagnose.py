@@ -5,10 +5,9 @@ from PIL import Image
 import numpy as np
 import os
 
-# Define dummy class labels
 LABELS = [
     "Normal",
-    "Anemia",
+    "Anaemia",
     "Thrombocytopenia",
     "Leukocytosis",
     "Leukopenia",
@@ -18,7 +17,6 @@ LABELS = [
     "Other"
 ]
 
-# ---------------------- Tabular ML Diagnosis ----------------------
 def predict_condition(features):
     """
     Accepts a list of 4 lab values: [haemoglobin, t.l.c, platelet count, mcv]
@@ -28,11 +26,11 @@ def predict_condition(features):
 
     if hb < 10:
         if mcv < 80:
-            return "Microcytic Anemia"
+            return "Microcytic Anaemia"
         elif mcv > 100:
-            return "Macrocytic Anemia"
+            return "Macrocytic Anaemia"
         else:
-            return "Normocytic Anemia"
+            return "Normocytic Anaemia"
     elif platelets < 150:
         return "Thrombocytopenia"
     elif tlc > 11:
@@ -42,24 +40,21 @@ def predict_condition(features):
     else:
         return "Normal"
 
-# ---------------------- CNN Image Model Diagnosis ----------------------
 def predict_condition_from_image(image: Image.Image):
     """
-    Takes a PIL image, resizes and normalizes it,
-    loads the saved CNN model and returns predicted condition.
+    Takes a PIL image, resizes and normalises it,
+    loads the saved CNN model and returns the predicted condition.
     """
     model_path = "model.pth"
 
-    # Preprocess the image
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
         transforms.Normalize([0.5], [0.5])
     ])
 
-    image = transform(image).unsqueeze(0)  # Add batch dimension
+    image = transform(image).unsqueeze(0)  
 
-    # Load model (ConvNeXt-Tiny)
     from torchvision.models import convnext_tiny
     model = convnext_tiny(num_classes=len(LABELS))
     model.load_state_dict(torch.load(model_path, map_location=torch.device("cpu")))
