@@ -15,7 +15,7 @@ def parse_lab_report(text):
             results.append({
                 "name": name,
                 "value": match.group(1),
-                "unit": "",  # Optionally extract units with another pattern
+                "unit": "",  
             })
 
     return results
