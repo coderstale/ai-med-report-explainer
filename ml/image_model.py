@@ -2,7 +2,7 @@ import torch
 from torchvision import models, transforms
 from PIL import Image
 
-LABELS = ["Normal", "Anemia", "Leukemia", "Infection"]
+LABELS = ["Normal", "Anaemia", "Leukemia", "Infection"]
 MODEL_PATH = "models/cnn_diagnosis_model.pt"
 
 def load_cnn_model():
