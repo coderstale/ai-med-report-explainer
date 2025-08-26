@@ -1,6 +1,6 @@
 # 🧪 AI Medical Report Explainer
 
-![Screenshot](https://media.discordapp.net/attachments/1397190732535697570/1397190781164326934/gif.gif?ex=6880d2d0&is=687f8150&hm=d4a2d90eb623f6b8aeb2a771c28e9c26d1ce9e2512d3173813b2467876ee4955&=&width=1600&height=868) 
+![Screenshot](https://media.discordapp.net/attachments/1397190732535697570/1397190781164326934/gif.gif?ex=68ae4e90&is=68acfd10&hm=a015951f3263070396edbaab00acdfb4fdd98e963bdcaa391698eb80025fc776&=&width=1760&height=955) 
 
 An advanced AI-powered web application to automatically **analyze**, **explain**, and **diagnose** lab reports using OCR, Natural Language Processing (NLP), Named Entity Recognition (NER), and deep learning.
 
